@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+
+    /* per defecte son 16 pero se recomienda aumentarlos un poco  */
+html{
+    font-size: 18px;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p{
+    font-size: 2rem;
+    font-family: 'Dancing Script', cursive;
+    line-height: 2.6rem;
+}
+
+span{
+    font-style: italic;
+    font-weight: bold;
+}
+
+section{
+    background-color: #ffe9dc;
+}
+
+h1{
+    color: rgb(255, 213, 0);
+    color: #b3867a;
+    background-color: #e0a899;	    
+}
+
+/* 
+Unitats: px, em, rem, %, vw, vh 
+
+-px: nº de pixels exacte. No fer ser massa a no ser que sigui per coses petites.
+-em: N vegades el valor normalment de font-size de l'element pare (superior) (millor utilitzar rem).
+-rem: N vegades el valor normalment de font-size de l'element arrel (root) (<html>)
+-%: percentatge sobre el valor de l'element pare.
+-vw: % del width del viewport (pantalla).
+-vh: % del height del viewport (pantalla).
+*/

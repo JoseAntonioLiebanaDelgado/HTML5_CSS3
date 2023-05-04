@@ -1,0 +1,99 @@
+:root {
+  /* Color vars */
+  --primary-color: #EA5D40;
+  --second-color: #FCEEEB;
+  --third-color: #752E20;
+  --fourth-color: #2E120C;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--second-color); /* #FCEEEB; */
+}
+
+header {
+  background-color: var(--primary-color); /* #EA5D40; */
+  padding: 1rem 0;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  color: var(--second-color); /* #FCEEEB; */
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+nav {
+  background-color: var(--third-color); /* #752E20; */
+  color: var(--second-color);
+}
+
+section { padding: 1.8rem 0; }
+
+p {
+  margin-bottom: 0.5rem;
+  line-height: 1.2rem;
+}
+
+a {
+  color: inherit; /* Hereda el color del elemento superior, de la nav en este caso*/
+}
+
+li { border-right: 1px solid var(--fourth-color); /* #2E120C; */ }
+
+li:hover {
+  cursor: pointer;
+  background-color: var(--fourth-color); /* #2E120C; */
+}
+
+li:last-child { border: none; } /*last child significa el ultimo, el ultimo li */
+
+*{ /* implica a todos los elementos*/
+  box-sizing: border-box; /* width hasta el borde de la caja ?*/
+}
+
+/* h1 es elemento de bloque por lo que ocupa toda la linea. Para centrar el h1:*/
+h1{
+  text-align: center;
+}
+
+.wrapper{ /* centrar elemento*/
+  width: 80vw;
+  margin: 0 auto; /*margin-left:auto; margin-right:auto */
+}
+
+ul{
+width: 80vw;
+margin: 0 auto;
+display: flex;
+}
+
+a{
+  line-height: 3.5rem;
+  text-decoration: none;
+  width: 100%;
+  display: inline-block;
+  text-align: center;
+}
+
+li{
+ /* width: calc(100%/3);*/
+  flex:1; /* hace que todos los elementos del contenedor flex ocupen el mismo espacio*/
+  flex-grow: 1;
+  /*flex-shrink y flex-basis: ;*/
+}
+
+/* section{
+  border: 10px black solid;
+  width: 500px;
+  padding: 30px;
+} */
+
+.hide{
+  display: none;
+}

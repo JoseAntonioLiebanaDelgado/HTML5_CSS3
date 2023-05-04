@@ -1,0 +1,59 @@
+.box{
+    width: 100px;
+    height: 100px;
+}
+
+.box-1{background-color: red;}
+
+.box-2{
+    background-color: blue;
+    height: 600px;
+    width: 600px;
+}
+.box-2-1{background-color: lightblue;}
+.box-2-2{background-color: lightseagreen;}
+.box-3{background-color: green;}
+.box-4{background-color: orange;}
+
+.box-1{
+    position: absolute; 
+    /*position: relative, con top 50px se desplaza hacia abajo 50px, es como un margin, se desplaza respecto a su posicion inicial. Relative mantiene estructura html, absolute queda fuera de la estructura*/
+    /* position: absolute, se desplaza respecto a la pantalla*/
+    top: 50px;
+    left: 50px;
+    z-index: 1; /* esto es la profundidad de la box*/
+}
+
+.box-2{
+    position: relative;
+}
+
+.box-2-1{
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    z-index: 2;
+}
+
+/* para un elemento sea posicionado respecto a otro se hace el superior relative y el inferior absolute*/
+.box-2-2{
+    position: absolute;
+    bottom: 100px;
+    right: 30px;
+}
+
+body{
+height: 2000px;
+}
+
+.box-3{
+    position: fixed; /* se lleva con el scroll*/
+    top: 100px;
+    z-index: 3;
+}
+
+.box-4{
+    position: sticky;
+    top: 200px;
+    left: 100px;
+}

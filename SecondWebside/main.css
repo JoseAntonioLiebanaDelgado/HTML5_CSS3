@@ -1,0 +1,162 @@
+/*Enlaces de interés:
+https://www.color-hex.com/
+https://flatuicolors.com/
+*/
+
+
+/*Con "*" todos los elementos de la pagina seran afectados por las siguientes clases. En este caso dejamos a la pagina sin margenes y sin paddings. Se podria decir que reseteamos los estilos del navegador*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    /*Tamaño fuente*/
+    font-size: 20px;
+    /*Tipo letra*/
+    font-family: sans-serif;
+    /*Resaltar en negrita*/
+    font-weight: bold;
+    /*Resaltar mas fino
+    font-weight: lighter;*/
+}
+
+h2{
+    /*Esto es lo mismo que hemos echo arriba pero inline*/
+    font-weight: bold 14px sans-serif;
+}
+
+/*Del siguiente modo podemos hacer cambios a todos estos elementos*/
+header, section, footer, aside, nav, article, hgroup{
+    /*Remarcamos borde de cada elemento
+    border: 1px solid black;*/
+    /*Esto es para asegurarnos que todos los elementos son el bloque y que todos los elementos estan debajo de otro*/
+    display: block;
+}
+
+body{
+    /*Para central el texto*/
+    text-align: center;
+
+    background: grey;
+}
+
+.Agrupar{
+    /*Tamaño del body del html al que hemos "Agrupar"*/
+    width: 960px;
+    /*Damos color de fondo
+    background-color: greenyellow;*/
+    /*Con esto creamos un borde de 1 pixel y de color negro*/
+    border: 1px solid black;
+
+    /*OJO!   --O-O--
+    -El margen es el espacio desde el borde del elemento (en este caso del body) hacie afuera.
+    -El padding es el espacio desde el borde del elemento (en este caso el body) hacia dentro*/
+
+    /*Si ponemos primero "n px" es para los margenes arriba y a bajo y si a continuacion ponemos "auto" sera para los lados*/
+    margin: 15px auto;
+
+    /*Margenes del body automaticos
+    margin: auto;*/
+
+    /*Margen de arriba
+    margin-top: 200px;*/
+
+    /*Margen izquierda automatico
+    margin-left: auto;*/
+
+    /*Margen derecha automatico
+    margin-right: auto;*/
+
+    /*Margen abajo
+    margin-bottom: 500px;*/
+
+    /*Padding
+    padding: 40px;*/
+
+    background: white;
+}
+
+.Cabecera{
+    background-color: #fffbb9;
+    border: 1px solid #999999;
+    padding: 20px;
+}
+
+.Cabecera h1{
+    /*Alineacion hacia la izquierda*/
+    text-align: left;
+}
+
+.Menu{
+    background-color: #ccc;
+    /*Primeros px para arriba y abajo y los segundos px para ambos lados*/
+    padding: 5px 15px;
+    text-align: left;
+}
+
+/*Esto lo utilizamos para seleccionar todos los elementos "li" que esten detro de un elemento que tenga la clase "menu" ("menu" en este caso)*/
+.Menu li{
+    /*Con esto quitamos los estilos de las listas de origen (puntos por ejemplo)*/
+    list-style: none;
+    padding: 5px;
+    font: bold 14px verdana;
+    /*Para hacer que los "li" se coloquen uno al lado del otro ponemos*/
+    display: inline-block;
+}
+
+.Seccion{
+    margin: 20px;
+    width: 600px;
+    /*Hacer que flote (En este caso sale del marco)*/
+    float: left;
+}
+
+article{
+    background: #fffbcc;
+    border: 1px solid #999;
+    padding: 20px;
+    /*Margen de abajo*/
+    margin-bottom: 15px;
+}
+
+time{
+    color: #999;
+}
+
+/*Esto afecta a todos los elementos footer dentro de article*/
+article footer{
+    text-align: right;
+    margin-top: 20px;
+}
+
+.Columna{
+    /*Ancho*/
+    width: 300px;
+    /*Hacer que flote (En este caso sale del marco)*/
+    float: left;
+    margin: 20px 0px;
+}
+
+.Columna blockquote{
+    border: 1px solid black;
+    padding: 40px;
+    background: #fffbb9;
+    margin-bottom: 20px;
+}
+
+.Pie{
+    /*Volver a la normalidad*/
+    clear: both;
+    padding: 20px;
+    background: #2d3436;
+    color: white;
+}
+
+img{
+    width: 80px;
+    /*Para situar la imagen debajo del "time"*/
+    display: block;
+    /*Para dar un margen de 20 px por arriba y abajo y que centre la imagen de los lados*/
+    margin: 20px auto;
+}

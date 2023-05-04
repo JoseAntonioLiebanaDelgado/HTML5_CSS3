@@ -1,0 +1,87 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.box{
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+
+    /* 
+    animation-name:  (obligatoria)
+    animatios-duration: (obligatoria)
+    animation-delay:
+    animatios-timing-function: (obligatoria)
+    animation-iteration-count: 
+    */
+     
+     /* animation: laMevaAnimacio 4s linear 2; */
+}
+
+@keyframes laMevaAnimacio{
+    /* 
+    breackpoints
+    */
+
+    /* 0% {
+        background-color: blue;
+    }
+    25% {
+        background-color: rgb(90, 21, 55);
+    }
+    50% {
+        background-color: rgb(251, 255, 0);
+    }
+    75% {
+        background-color: rgb(255, 17, 0);
+    } 
+    100% {
+        background-color: rgb(5, 1, 1);
+    } */
+
+
+    /* from {
+        background-color: blue;
+        width: 200px;
+    }
+    to { 
+        background-color: green;
+        width: 400px;
+    } */
+
+
+    0% {
+        background-color: rgb(255, 17, 0);
+    } 
+
+    50% {
+        background-color: rgb(5, 1, 1);
+    } 
+}
+/* ------------------------------------------------------------------------------ */
+
+.box{
+
+/* transicion:
+transicion-duration:
+transicion-timing-function:
+transition-delay: */
+
+/* transition: background-color 2s linear; */
+transition: all 2s linear;
+}
+
+.box:hover{
+    background-color: green;
+    /* width: 400px; */
+    /* Para mover */
+    /* transform: translateY(100px);
+    transform: scale(2); */
+    transform: rotate(25deg);
+}
+
+
+

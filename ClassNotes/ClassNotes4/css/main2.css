@@ -1,0 +1,38 @@
+/* Tag selector , se escribe el tag <>*/
+h3{
+    color: blue;
+}
+body{
+    background-color: lavenderblush;
+}
+
+/* ID Selector, se escribe el id con el # */
+#about-heading{
+    color: green;
+}
+
+/* Class Selector, se escribe la class con . */
+.primary-heading{
+    color:lightcoral;
+}
+
+/* Multiple Selector, una coma para los dos a la vez */
+#about-heading,.primary-heading,p{
+    font-style: italic;
+}
+
+/* Nested Selector */
+ #about p{ /*descendant selector, no matter how deep */
+    color: darkolivegreen;
+} 
+#about > p{ /*child selector, only one lvl under*/
+    color:darkolivegreen;
+}
+
+/* Pseudo-Classes */
+#about:hover{
+    background-color: yellow;
+}
+#about:active{
+    background-color: darkorchid;
+}

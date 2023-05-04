@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<!-- Si pulsas !+tab se genera automaticamente estructura basica html-->
+<!-- Shift + alt + flechas copia la misma linea abajo-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase 2</title>
+</head>
+<body>
+    <h1 id="titleSO2">SO2</h1>
+
+    <!-- link externo, ruta absoluta -->
+    <a href="https://google.com">Link to Google</a> 
+    <p>
+     <!-- link externo pero nueva pestaña -->
+        <a href="https://google.com" target="_blank">Link to Google</a> 
+    </p>
+
+    <p>
+        <!-- link interno, ruta relativa siempre que se pueda -->
+           <a href="../Clase 1/index.html">Link to clase 1</a> 
+    </p>
+
+    <!-- <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br> -->
+    
+    <p>
+        <!-- con el # poniendo el mismo id que otro elemento el link busca ese elemento -->
+        <a href="#titleSO2">Link to title h1</a>
+    </p>
+
+    <!-- Imagenes locales -->
+    <!-- src es direccion de la imagen, alt es lo que sale si la imagen da error y no sale -->
+    <img src="./img/cat-gaa9c16f78_640.jpg" alt="error">
+    <br>
+    <!-- Imagenes de internet, copiando direccion imagen -->
+    <img src="https://www.threepoints.com/sites/default/files/2022-05/4%20tipos%20de%20cloud%20computing.jpg" alt="error">
+
+    <!-- audio  -->
+    <!-- Dos modos para añadir audio, 1: audio src (link) y controls y el 2: audio controls y dentro soruce src link type, este segundo es mas seguro por si falla el primer audio -->
+    <audio controls src="./audio/mixkit-fast-small-sweep-transition-166.wav" ></audio>
+    <audio controls>
+        <source src="./audio/mixkit-fast-small-sweep-transition-166.wav" type="audio/wav">
+        <source src="./audio/mixkit-fast-small-sweep-transition-166.mp3" type="audio/mp3">
+    </audio>
+    <!-- video  -->
+    <!-- Dos modos para añadir video, 1: video src (link) y controls y el 2: video controls y dentro soruce src link type, este segundo es mas seguro por si falla el primer video -->
+    <video controls src="./video/Mujer - 58142.mp4"></video>
+    <video controls>
+        <source src="./video/Mujer - 58142.mp4" type="video/mp4">
+    </video>
+
+    <!-- lista desordenada -->
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2
+            <ul>
+                <li>SubItem 2.1</li>
+                <li>SubItem 2.2</li>
+            </ul>
+        </li>
+        <li>Item 3</li>
+    </ul>
+
+    <!-- lisa ordenada -->
+    <ol>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ol>
+
+    <!-- Tabla -->
+    <table>
+        <thead>
+            <tr>
+                <th>First name</th>
+                <th>Last name</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>John</td>
+                <td>Smith</td>
+                <td>jsmith@gmail.com</td>
+            </tr>
+            <tr>
+                <td>Karen</td>
+                <td>Perez</td>
+                <td>kperez@gmail.com</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

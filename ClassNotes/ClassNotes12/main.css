@@ -1,0 +1,65 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.box{
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+
+    /*
+    animation-name(obligatoria)
+    animation-duration(obligatoria)
+    animation-timing-function(obligatoria)
+    animation-delay
+    animation-iteration-count
+    animation-fill-mode
+    */
+   /* animation: lamevaanimacio 2s linear infinite;*/
+}
+
+@keyframes lamevaanimacio{
+    /* breakpoints*/
+    0%{
+        background-color: blue;
+        width: 100px;
+    }
+    25%{
+        background-color: red;
+        width: 200px;
+    }
+    50%{
+        background-color: yellow;
+        width: 600px;
+    }
+    75%{
+        background-color: orangered;
+        width: 900px;
+    }
+    100%{
+        background-color: blue;
+        width: 100px;
+    }
+    /*from = 0% to = 100%*/
+
+
+}
+.box{
+    /*transition
+    transition-duration
+    transition-timing-function
+    transition-delay
+    */
+    transition: all 2s linear;
+    
+
+}
+.box:hover{
+    background-color: green;
+    /*width: 400px;*/
+    /*transform:translateY(100px);*/
+    /*transform: scale(4);*/
+    transform: rotate(25deg);
+}

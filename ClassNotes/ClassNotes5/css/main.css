@@ -1,0 +1,70 @@
+/* para que un borde se vea se tienen que poner width, color y style las tres, sino no funciona, no importa orden */
+#box-1{
+    background-color: lightpink;
+    border-width: 3px;
+    border-color: rebeccapurple;
+    border-style: solid;
+    box-shadow: black 15px 10px 5px;
+    border: 3px red solid;
+}
+
+#box-2{
+    /* border: 3px green solid;
+    border-top: 2px blue solid; */
+    border-radius: 10px;
+    border-radius: 5px 10px 15px 20px; 
+    /* para redondear esquinas borde, se pueden poner 4numeros cada uno una esquina, empieza         izquierda arriba y va como las agujas de un reloj. Si escribes menos de 4, la esquina que falte coje el valor de la esquina opuesta*/
+    border-radius: 10px 20px 5px;
+    background-color: bisque;
+    /*con numeros negativos la sombra va hacia el otro lado, el tercer numero es lo que se difumina */
+    box-shadow: black 15px 5px 10px;
+}
+
+#box-3{
+    background-image: url('../img/nature-wallpaper-ge08bb83ba_1280.jpg');
+    color: white;
+    width: 90vw;
+    height: 170vh;
+    background-repeat: no-repeat;
+    /* para que ocupe todo el espacio disponible*/
+    background-size: cover; 
+    background-attachment: fixed;
+}
+
+#box-4{
+    border: 3px black solid;
+    margin: 2rem;
+    padding: 1rem;
+    margin-top: 4rem;
+    margin: 1rem 2rem 3rem 4rem;
+    margin: 1rem 2rem;
+    background-color: goldenrod;
+}
+
+#logout{
+    padding: 1rem 3rem;
+    background-color: rgb(55, 99, 186);
+    color: rgb(217, 252, 252);
+    border-radius: 12px;
+    font-size: 1.3rem;
+    /*poniendo none tmb funciona*/
+    border: 0; 
+    /* cambia de inline a block*/
+    display: block;
+    /*con auto se centra horizontalmente solo*/
+    margin: 1rem auto; 
+}
+
+#logout:hover{
+background-color: rgb(6, 6, 155);
+/*cambiar cursor a mano pulsar*/
+cursor: pointer; 
+}
+
+#logout:active{
+    outline: 3px rgb(1, 1, 92) solid;
+}
+
+#logout img{
+    width: 2rem;
+}

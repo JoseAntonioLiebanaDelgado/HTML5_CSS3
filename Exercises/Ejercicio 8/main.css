@@ -1,0 +1,24 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.spinner{
+    border: 1px solid black;
+    border-radius: 100%;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    width: 100px;
+    height: 100px;
+    animation: spinner 1s linear infinite;
+}
+
+@keyframes spinner{
+    0%{
+        transform: rotate(0deg);
+    } 
+    100%{transform: rotate(360deg);
+    }
+}

@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Roboto:wght@300&display=swap');
+
+html{
+    font-size: 1.1rem;
+    font-family: 'Roboto', sans-serif;
+    background-color: black;
+}
+
+body{
+    background-color: white;
+}
+
+h3{
+   font-size: 1.3rem; 
+}
+
+header,footer{
+    background-color: rgb(84,120,193);
+    color: white;
+}
+
+section{
+    background-color: rgba(210,223,251, 0.8);
+    color: rgb(73,105,169);
+}
+
+#articulo1:hover{
+color: white;
+background-color: rgb(10,15,24);
+}
+
+#articulo1:active{
+    color: black;
+}
+
+span{
+    font-weight: bold;
+}
+
+#ultimop{
+    font-style: italic;
+}
